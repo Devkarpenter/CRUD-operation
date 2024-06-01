@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+
+.container{
+  max-width: fit-content;
+  margin:  auto;
+}
+.btn{
+  border: none;
+  padding: 7px 15px;
+  border-radius: 15px;
+  font-size: 30px ;
+  border-bottom: 5px;
+  cursor: pointer;
+  
+}
+.btn-add{
+margin-top: 30px;
+background:#257964;
+color: rgb(250, 249, 249);
+box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+
+}
+.btn-add:hover{
+  font-size: 40px ;
+  transition: 0.5s;
+}
+.close-btn{
+  background-color: #fa1717;
+  color: aliceblue;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addContainer{
+  font-size: 40px;
+  position: absolute;
+  background-color: rgba(2, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+.addContainer label{
+  font-size: 50px;
+}
+
+
+.addContainer form{
+  width: 700px;
+  font-weight: 400;
+  background-color: rgb(248, 252, 248);
+  color: rgb(3, 0, 0);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  
+}
+.addContainer form input{
+  font-size: 40px;
+  background: none;
+  border-radius:6px;
+  background: transparent;
+  padding: 10px 10px 10px;
+  
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.addContainer form button{
+  background-color: rgb(57, 176, 107);
+  margin-top: 30px;
   color: white;
+  font-size: 50px;
+  border-radius: 50px;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+}
+.addContainer form .close-btn{
+  margin-left: auto;
+  font-size: 40px;
+  padding: 10px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.tableContainer{
+  margin-top: 30px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 400;
+  border-top:2px solid white;
+  border-bottom:2px solid white;
+  color: rgb(26, 3, 3);
+  
+}
+.addContainer table{
+  box-shadow: 5px 5px 10px rgba(71, 99, 37, 0.2);
+  
 }
 
-.App-link {
-  color: #61dafb;
+.tableContainer table thead tr{
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableContainer table thead tr th,
+.tableContainer table tbody tr td{
+  min-width: 200px;
+  color: aliceblue;
+  padding: 9px;
+  text-align: center;
 }
+.tableContainer table tbody tr td{
+  
+}
+.tableContainer p{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.btn-edit,
+.btn-delete{
+  font-size:16px ;
+  padding: 5px 10px;
+  margin: 5px 10px;
+
+}
+.btn-edit{
+  background-color: #e2f43e;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+}
+.btn-delete{
+  background-color: #fa1717;
+  color: white;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+}
+
