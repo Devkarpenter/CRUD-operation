@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import "./Form.css"
 import './App.css'
 import axios from "axios";
 import Formtable from './Formtable';
@@ -67,12 +67,20 @@ function App() {
   },[])
  
   const handleDelete = async (id) => {
-     const data =  await axios.delete('/delete/'+id)
-    if(data.data.success){
-      getFatchData()
-      alert(data.data.message)
+    try {
+      const response = await axios.delete(`/delete/${id}`);
+      if (response.data.success) {
+        alert(response.data.message);
+        getFatchData(); // Assuming this function fetches updated data
+      } else {
+        alert('Delete operation failed');
+      }
+    } catch (error) {
+      console.error('Error deleting:', error);
+      alert('An error occurred while deleting');
     }
   };
+  
 
   const handleUpdate = async(e) => {
     e.preventDefault()
@@ -105,7 +113,7 @@ function App() {
   return (
     <>
     
-    <div className="container">
+    <div className="login-form container">
       
       <button className='btn btn-add' onClick={() => setAddSection(true)}>+</button>
 

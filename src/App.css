@@ -10,7 +10,6 @@
   font-size: 30px ;
   border-bottom: 5px;
   cursor: pointer;
-  
 }
 .btn-add{
 margin-top: 30px;
@@ -18,10 +17,11 @@ background:#257964;
 color: rgb(250, 249, 249);
 box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
 
+transition: 0.5s ease;
 }
 .btn-add:hover{
-  font-size: 40px ;
-  transition: 0.5s;
+  font-size: 35px ;
+  transform: scale(1.1);
 }
 .close-btn{
   background-color: #fa1717;
@@ -107,10 +107,7 @@ box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
   
 }
 
-.tableContainer table thead tr{
-  
-  
-}
+
 
 .tableContainer table thead tr th,
 .tableContainer table tbody tr td{
@@ -119,9 +116,7 @@ box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
   padding: 9px;
   text-align: center;
 }
-.tableContainer table tbody tr td{
-  
-}
+
 .tableContainer p{
   font-size: 20px;
   margin-left: 20px;

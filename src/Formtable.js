@@ -2,6 +2,7 @@ import React from 'react'
 import "./App.css"
 import { MdClose } from 'react-icons/md'
 
+
 const Formtable = ({handlesubmit,handleOnChange,handleclose,rest}) => {
 
     
